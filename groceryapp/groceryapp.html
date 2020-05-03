@@ -1,0 +1,52 @@
+<html> 
+  
+<body>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <h1>Firebase Grocery App</h1>
+</head>
+<body>
+    <input type="text" placeholder="Enter Grocery Store" id="storeTextBox">
+    <button type="button" id ="addStoreButton" class="btn btn-primary">Add</button>
+<br>
+
+<p id = "storeList"></p>    
+<!-- <button type="button" id ="removeTaskButton" class="btn btn-primary">Delete</button>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Search Current List
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#"> </a> -->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- Firebase Realtime Database Library -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyCCG_pqFgfepS_ZF8hV9VLe-3PoEeDDzjQ",
+  authDomain: "grocery-app-597ec.firebaseapp.com",
+  databaseURL: "https://grocery-app-597ec.firebaseio.com",
+  projectId: "grocery-app-597ec",
+  storageBucket: "grocery-app-597ec.appspot.com",
+  messagingSenderId: "382705960490",
+  appId: "1:382705960490:web:b1209606a1c86864ade553"
+};
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>    
+
+<script src = "groceryapp.js"></script>
+    </body>
+
+</html>
