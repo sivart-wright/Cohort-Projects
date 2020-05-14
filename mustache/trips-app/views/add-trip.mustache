@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+
+<h1> Add Trip </h1>
+<br>
+<a href="/trips">View all trips</a>
+<a href = "/users/signout">Sign Out</a>
+<br>
+<br>
+<form method="POST" action="/trips/add-trip">
+
+<input type = "text" placeholder = "City" name="city">
+<input type = "text" placeholder = "Dates" name="dates">
+<button type="submit">Take Me Away!</button>
+
+</form>
+
+{{#city}}
+    Your trip to {{city}} has been added. Bon voyage!
+{{/city}}
+
+</body>
+</html>

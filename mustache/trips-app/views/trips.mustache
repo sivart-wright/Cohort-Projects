@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>View all trips</h1>
+
+<ul>
+{{#trips}}
+
+
+<li> 
+
+<label> {{city}} </label>
+
+<form method="POST" action="/trips/delete-trip"> 
+<input type="hidden" value={{city}} name="city"/>
+<button>Delete</button> 
+
+</form>
+
+</li>
+
+{{/trips}}
+</ul>
+
+</body>
+</html>
